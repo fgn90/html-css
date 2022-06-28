@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <!--Forma para adicionar estilo em todas as tags Mark -->
+    <style>
+        mark{
+            background-color: aqua;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Usando o <b>negrito</b> usando a tag B (que não é uma tag semântica, tag não recomendada para uso).</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Frase usando <i>itálico (não semântica, tag não recomendada para uso).</i></p>
+    <p>Frase usando <em>a tag EM (semântica).</em></p>
+    <h2>Texto marcado</h2>
+    <p>Texto <mark>marcado (marca o texto)</mark> </p>
+    <p>Outro Texto<mark> marcado (marca o texto)</mark> </p>
+    <!--Forma para adicionar estilo dentro de uma tag especifica.-->
+    <p>Outro Texto<mark style="background-color: rgb(255, 0, 0);"> marcado (marca o texto)</mark> </p>
+    <!--big tag obsoleta, deve ser formatado no CSS.  | small ainda utilizada por ter algum sentido no html-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Criação de <big>texto grande</big> e <small>texto pequeno</small></p>
+    <h2>Texto deletado</h2>
+    <p>Marcação de <del>texto deletado</del>, onde o mesmo deve ser lido mas não considerado</p>
+    <h2>Texto iserido.</h2>
+    <p>Texto considerado como <ins>inserido para dar ênfase e indicar que ele foi adicionado depois.</ins></p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3<sup>x</sup>(o 2 elevado a potencia).</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O(formula da tabela periodica)</p>
+</body>
+</html>
