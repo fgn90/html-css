@@ -67,24 +67,44 @@ section {
     font-size: 3.5vw;
 }
 
+/* Configuração de todo p dentro das sections. */
+section > p {
+    padding-bottom: 1em;
+}
+
 /* Configuração da section da classe normal. */
 section.normal {
     background-color: white;
     color: black;
 }
 
-/* Configuração da section da classe imagem. */
+/* Configuração da section da classe imagem. O "background-attachment: fixed;" cria um efeito chamado Parallax, onde ao scrollar o site a imagem fica fixa e não se move.*/
 section.imagem {
     background-color: rgb(68, 68, 68);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+/* Configuração de todo p dentro da section cuja classe é imagem. */
 section.imagem > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.473);
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
+/* Configuração de todo p dentro da section cujo ID é img01. */
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+}
+
+/* Configuração de todo p dentro da section cujo ID é img02. */
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
 
 footer {
     background-color: black;
