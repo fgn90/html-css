@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Configuração padrão para remover todas as margens e paddings padrões. */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Configuração padrão utilizada pelo HTML todo e pelo body. */
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Configuração de todo h1 dentro do header. */
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+}
+
+/* Configuração de todo p dentro do header. */
+header > p {
+    padding-bottom: 50px;
+}
+
+/* Configuração dos links "a" dentro de header e footer. */
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Configuração dos links "a" do header e footer, adicionando uma pseudo-classe para quando passar o mouse no link, ele se tornar sublinhado. */
+header a:hover, footer a:hover  {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+/* Configuração da section da classe normal. */
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+/* Configuração da section da classe imagem. */
+section.imagem {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
