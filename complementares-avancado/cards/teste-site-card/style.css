@@ -1,0 +1,155 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+        min-height: 153px;
+        background-color: #3e8aff;
+        padding-top: 40px;
+}
+
+header > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header > p {
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    padding-bottom: 15px;
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.164);
+    margin: auto;
+    border-radius: 2px;
+}
+
+nav > a {
+    width: 220px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+
+}
+
+nav > a:hover {
+    background-color: darkolivegreen;
+}
+/*Main*/
+div.pai {
+    background-color: white;
+    width: 50%;
+    height: 100vh;
+    border-radius: 2px 2px 0px 0px;
+    margin: auto;
+}
+
+div.pai > h1 {
+    padding: 10px;
+}
+
+div.pai section.texto p {
+    padding: 0px 10px 10px 10px;
+    text-indent: 30px;
+
+}
+
+/* Cards */
+div.cards {
+    display: flex;
+}
+
+div.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(184, 43, 43);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin: auto;
+}
+
+div.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+div.cards section.card img {
+    width: 100%;
+}
+
+div.cards section.card h3 {
+    font-size: 100%; /*Boa prática para responsividade*/
+    margin: 16px 0px;
+}
+
+div.cards section.card span {
+    font-weight: 4 00;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+div.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 700;
+    color: white;
+}
+
+div.cards section.card.contato {
+    box-shadow: 20px 20px 50px -30px #dbc4ff;
+
+}
+
+div.cards section.card.contato button {
+    background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+
+div.cards section.card.compra {
+    box-shadow: 20px 20px 50px -30px #afd6ff;
+
+}
+
+div.cards section.card.compra button {
+    background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+
+div.cards section.card.sobre {
+    box-shadow: 20px 20px 50px -30px #ffc1d5;
+
+}
+
+div.cards section.card.sobre button {
+    background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+/*Footer*/
+footer {
+    background-color: white;
+    text-align: center;
+    height: 30px;
+    margin: auto;
+    padding-top: 15px;
+}
