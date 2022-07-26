@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+/* Configuração geral do site */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: rgb(243, 243, 152);
+        }
+
+        div {
+
+            width: 150px;
+            height: 150px;
+
+            
+            border-radius: 16px;
+            text-align: center; 
+        }
+/* Fim da Configuração geral do site */
+/*Primeiros exemplos de blocos*/
+        main.container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            row-gap: 10px;
+            column-gap: 30px;
+
+            padding: 16px;
+            height: 500px;
+        }
+
+        div.bloco-1 {
+            background-color: rgb(159, 207, 221);
+            font-size: 0.5em;
+            
+        }
+
+        div.bloco-2 {
+            background-color: rgb(196, 159, 221);
+            font-size: 1em;
+
+        }
+        div.bloco-3 {
+            background-color: rgb(252, 122, 122);
+            font-size: 1.5em;
+
+        }
+/* Fim do primeiro exemplo */
+/*Inicio segundo exemplo exemplos de blocos*/
+        main.container2 {
+            padding: 16px;
+            height: 500px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            align-content: center;
+            row-gap: 10px;
+            column-gap: 30px;
+
+
+        }
+
+        div.bloco-cont2-1 {
+            background-color: rgb(159, 207, 221);
+            font-size: 0.5em;
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto; */
+            flex: 0 1 auto;
+            align-self: flex-start;
+        }
+
+        div.bloco-cont2-2 {
+            background-color: rgb(196, 159, 221);
+            font-size: 1em;
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto; */
+            flex: 0 1 auto;
+        }
+        div.bloco-cont2-3 {
+            background-color: rgb(252, 122, 122);
+            font-size: 1.5em;
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto; */
+            flex: 0 1 auto;
+            align-self: flex-end;
+        }
+
+/*Fim segundo exemplo exemplos de blocos*/
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+    </main>
+    <main class="container2">
+        <div class="bloco-cont2-1">1</div>
+        <div class="bloco-cont2-2">2</div>
+        <div class="bloco-cont2-3">3</div>
+        <!-- <div class="bloco-cont2-1">1</div>
+        <div class="bloco-cont2-2">2</div>
+        <div class="bloco-cont2-3">3</div>
+        <div class="bloco-cont2-1">1</div>
+        <div class="bloco-cont2-2">2</div>
+        <div class="bloco-cont2-3">3</div>
+        <div class="bloco-cont2-1">1</div>
+        <div class="bloco-cont2-2">2</div>
+        <div class="bloco-cont2-3">3</div> -->
+    </main>
+</body>
+</html>
