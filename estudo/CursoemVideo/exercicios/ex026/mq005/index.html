@@ -7,8 +7,9 @@
     <title>Menu responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!-- Arruma bugs que possam causar por conta do tamanho -->
     <header>
         <h1>Meu site</h1>
         <!-- Adição do menu hambúrguer para telas menores  -->
@@ -36,7 +37,15 @@
     </main>
     
     <script>
-    
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
         function clickMenu() { // Função para esconder e fazer aparecer o menu
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'
