@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <!-- Adição do menu hambúrguer para telas menores  -->
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,5 +34,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis obcaecati iste? Quasi odit necessitatibus incidunt animi. Cum et illo modi dolorum quod est vitae eaque alias! Pariatur, minima libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nulla ut rerum recusandae quibusdam sint officiis asperiores sed rem, porro tenetur, nihil explicabo vel in repellat temporibus iure deleniti exercitationem?</p>
         </article>
     </main>
+    
+    <script>
+    
+        function clickMenu() { // Função para esconder e fazer aparecer o menu
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
